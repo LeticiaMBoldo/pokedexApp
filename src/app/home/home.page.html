@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Pokedex App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <!--Barra de pesquisa-->
+  <ion-searchbar placeholder="Buscar Pokémon" color="medium"></ion-searchbar>
+
+  <!--lista de busca-->
+  <ion-item-sliding>
+    <ion-item color="dark">
+
+      <ion-chip color="light" slot="start">
+        <ion-label color="grass">001</ion-label>
+      </ion-chip>      
+
+      <ion-label>
+        <div><h2>Bulbasaur</h2>
+          <ion-badge color="grass">Grass</ion-badge>
+          <ion-badge color="poison">Poison</ion-badge>
+        </div>
+      </ion-label>
+
+      <ion-thumbnail slot="end">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
+      </ion-thumbnail>     
+
+    </ion-item>
+    <ion-item-options side="start">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <!--segundo item-->
+  <ion-item-sliding>
+    <ion-item color="dark">
+
+      <ion-chip color="light" slot="start">
+        <ion-label color="grass">002</ion-label>
+      </ion-chip>      
+
+      <ion-label>
+        <div><h2>Ivysaur</h2>
+          <ion-badge color="grass">Grass</ion-badge>
+          <ion-badge color="poison">Poison</ion-badge>
+        </div>
+      </ion-label>
+
+      <ion-thumbnail slot="end">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png">
+      </ion-thumbnail>     
+
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item color="dark">
+
+      <ion-chip color="light" slot="start">
+        <ion-label color="grass">003</ion-label>
+      </ion-chip>      
+
+      <ion-label>
+        <div><h2>Venusaur </h2>
+          <ion-badge color="grass">Grass</ion-badge>
+          <ion-badge color="poison">Poison</ion-badge>
+        </div>
+      </ion-label>
+
+      <ion-thumbnail slot="end">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png">
+      </ion-thumbnail>     
+
+    </ion-item>
+    <ion-item-options side="start">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  
+</ion-content>
