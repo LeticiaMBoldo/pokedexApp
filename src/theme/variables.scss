@@ -107,19 +107,19 @@
   --ion-color-flying-shade: #a6a3a2;
   --ion-color-flying-tint: #c4c0bf;
 
-  --ion-color-eletrico: #eed535;
-  --ion-color-eletrico-rgb: 238,213,53;
-  --ion-color-eletrico-contrast: #ffffff;
-  --ion-color-eletrico-contrast-rgb: 255,255,255;
-  --ion-color-eletrico-shade: #d1bb2f;
-  --ion-color-eletrico-tint: #f0d949;
+  --ion-color-eletric: #eed535;
+  --ion-color-eletric-rgb: 238,213,53;
+  --ion-color-eletric-contrast: #ffffff;
+  --ion-color-eletric-contrast-rgb: 255,255,255;
+  --ion-color-eletric-shade: #d1bb2f;
+  --ion-color-eletric-tint: #f0d949;
 
-  --ion-color-agua: #4592c4;
-  --ion-color-agua-rgb: 69,146,196;
-  --ion-color-agua-contrast: #ffffff;
-  --ion-color-agua-contrast-rgb:255,255,255;
-  --ion-color-agua-shade: #3d80ac;
-  --ion-color-agua-tint: #589dca;
+  --ion-color-water: #4592c4;
+  --ion-color-water-rgb: 69,146,196;
+  --ion-color-water-contrast: #ffffff;
+  --ion-color-water-contrast-rgb:255,255,255;
+  --ion-color-water-shade: #3d80ac;
+  --ion-color-water-tint: #589dca;
 
 }
 
@@ -166,20 +166,20 @@
 
 //adicionar a cor eletrico
 .ion-color-eletrico {
-  --ion-color-base: var(--ion-color-eletrico);
-  --ion-color-base-rgb: var(--ion-color-eletrico-rgb);
-  --ion-color-contrast: var(--ion-color-eletrico-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-eletrico-contrast-rgb);
-  --ion-color-shade: var(--ion-color-eletrico-shade);
-  --ion-color-tint: var(--ion-color-eletrico-tint);
+  --ion-color-base: var(--ion-color-eletric);
+  --ion-color-base-rgb: var(--ion-color-eletric-rgb);
+  --ion-color-contrast: var(--ion-color-eletric-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-eletric-contrast-rgb);
+  --ion-color-shade: var(--ion-color-eletric-shade);
+  --ion-color-tint: var(--ion-color-eletric-tint);
 }
 
 //adicionar a cor aguatico
 .ion-color-agua {
-  --ion-color-base: var(--ion-color-agua);
-  --ion-color-base-rgb: var(--ion-color-agua-rgb);
-  --ion-color-contrast: var(--ion-color-agua-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-agua-contrast-rgb);
-  --ion-color-shade: var(--ion-color-agua-shade);
-  --ion-color-tint: var(--ion-color-agua-tint);
+  --ion-color-base: var(--ion-color-water);
+  --ion-color-base-rgb: var(--ion-color-water-rgb);
+  --ion-color-contrast: var(--ion-color-water-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-water-contrast-rgb);
+  --ion-color-shade: var(--ion-color-water-shade);
+  --ion-color-tint: var(--ion-color-water-tint);
 }
