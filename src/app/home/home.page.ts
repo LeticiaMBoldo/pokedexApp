@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DadosService } from '../servicos/dados.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -69,12 +71,22 @@ export class HomePage {
   ];
   public listaFiltrada = [];
 
-  constructor() {
+  constructor(public dadosService: DadosService, public router:Router) {
       this.resetarLista();
   }
 
   public resetarLista() {
     this.listaFiltrada = this.listaPokemons;
+  }
+
+  public abrirDadosPokemon(pokemon: any){
+
+    //Salva os dados no BD virtual
+    this.dadosService.setDados('dadosPokemon', pokemon);
+    //guardar o metodo
+
+    //abre outra pagina por programação
+    this.router.navigateByUrl('/dados-pokemon');
   }
 
   public buscarPokemon(evento : any){
