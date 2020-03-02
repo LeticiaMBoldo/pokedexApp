@@ -81,7 +81,7 @@ export class HomePage {
   }
 
   public buscaPokemonApi(offset = 0){
-    this.pokeApi.listarPokemons(offset).subscribe(dados =>{ this.listaPokemonsApi = dados;
+    this.pokeApi.listarPokemons(offset).subscribe(dados =>{ this.listaPokemonsApi = dados['result'];
     console.log(this.listaPokemonsApi);
     })
   }
