@@ -7,30 +7,29 @@
 </ion-header>
 
 <ion-content color="dark">
-  <!--Barra de pesquisa-->
-  <ion-searchbar placeholder="Buscar Pokémon" color="medium" (ionChange)="buscarPokemon($event)"></ion-searchbar>
+  <ion-searchbar placeholder="Buscar Pokemon" color="medium" (ionChange)="buscarPokemon($event)"></ion-searchbar>
 
-  <!--lista de busca-->
-  <ion-item-sliding *ngFor="let pokemon of listaPokemonApi">
+  <ion-item-sliding *ngFor="let pokemon of listaFiltrada">
+    
     <ion-item color="dark" (click)="abrirDadosPokemon(pokemon)">
 
       <ion-chip color="light" slot="start">
-        <ion-label></ion-label>
-      </ion-chip>      
+        <ion-label [color]="pokemon.types[0].type.name">{{pokemon.id}}</ion-label>
+      </ion-chip>
 
       <ion-label>
         <div>
           <h2>{{pokemon.name}}</h2>
-          <ion-badge >{{}}</ion-badge>
+          <ion-badge *ngFor="let tipo of pokemon.types" [color]="tipo.type.name">{{tipo.type.name}}</ion-badge>
         </div>
       </ion-label>
 
       <ion-thumbnail slot="end">
-        <img >
-      </ion-thumbnail>     
+        <img [src]="pokemon.sprites.front_default">
+      </ion-thumbnail>
 
     </ion-item>
-    <ion-item-options side="start">
+    <ion-item-options side="end">
       <ion-item-option color="danger">
         <ion-icon slot="icon-only" name="trash"></ion-icon>
       </ion-item-option>

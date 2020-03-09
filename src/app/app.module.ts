@@ -12,7 +12,6 @@ import { DadosService } from './servicos/dados.service';
 
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
